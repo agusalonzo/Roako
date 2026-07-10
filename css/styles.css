@@ -169,19 +169,21 @@ a:focus-visible,
 
 .general-footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start ;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px 20px 20px;
+    padding: 3rem 3rem 1.5rem;
+    font-size: 0.85rem;
     background-color: var(--color-fondo);
 }
 
 .contenedor-footer h3 {
     color: var(--color-acento);
     font-weight: 500;
-    font-size: 25px;
-    margin-top: 25px;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .lista-footer {
