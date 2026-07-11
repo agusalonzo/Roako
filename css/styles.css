@@ -23,6 +23,7 @@ body {
     font-style: normal;
 }
 
+
 /* LINKS */
 
 a {
@@ -226,15 +227,11 @@ a:focus-visible,
 /* HERO  */
 
 .hero {
-    align-items: center;
     display: flex;
-    justify-content: flex-start;
     padding: 0 2rem;
     height: 50vh;
     color: white;
     margin: 0 auto;
-    max-width: 1300px;
-
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/backrooms.webp") center/cover no-repeat;
 }
@@ -247,11 +244,11 @@ a:focus-visible,
     height: 50vh;
     color: rgba(255, 255, 255, 0.276);
     margin: 0 auto;
-    max-width: 1300px;
+
     font-size: 30px;
 
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(233, 229, 229, 0.188), rgba(0, 0, 0, 0.5)),
     url("../img/disclousure.png") center/cover no-repeat;
 
 }
