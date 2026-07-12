@@ -122,6 +122,19 @@ a:focus-visible,
     color: var(--color-texto-claro);
 } 
 
+
+
+/* --------------- SEARCH BAR -------------------*/
+
+input.form-control[type="search"]:hover {
+    background-color: rgba(0, 0, 0, 0.35) !important;
+  }
+
+  input.form-control[type="search"]:focus-visible {
+    outline: 2px solid var(--color-acento);
+  }
+
+
 /* ============================
      MEDIA QUERY - PANTALLAS CHICAS
   ============================ */
