@@ -6,11 +6,11 @@
 
 
 :root {
-    --color-fondo: rgb(239, 246, 246);
-    --color-logo: rgb(44, 46, 44);
-    --color-texto-links: rgb(88, 86, 84);
-    --color-texto-claro: rgb(246, 239, 239);
-    --color-acento: rgb(255, 89, 0);
+    --color-fondo: #eff6f6;
+    --color-logo: #2c2e2c;
+    --color-texto-links: #585654;
+    --color-texto-claro: #f6efef;
+    --color-acento: #ff5900;
     --transicion-rapida: 0.2s ease;
 }
 
@@ -55,7 +55,7 @@ a:focus-visible,
     flex: 1;
 }
 .logo a {
-    color: var(--color-logo);
+    color: var(--color-acento);
     font-size: 30px;
     font-weight: 500;
 
