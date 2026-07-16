@@ -242,6 +242,8 @@ input.form-control[type="search"]:hover {
 .hero {
     display: flex;
     padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
     height: 50vh;
     color: white;
     margin: 0 auto;
