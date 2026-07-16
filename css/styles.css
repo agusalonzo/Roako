@@ -246,7 +246,7 @@ input.form-control[type="search"]:hover {
     color: white;
     margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/backrooms.webp") center/cover no-repeat;
+    url("../img/proyecto1.jpg") center/cover no-repeat;
 }
 
 .hero-2 {
@@ -262,7 +262,7 @@ input.form-control[type="search"]:hover {
 
 
     background: linear-gradient(rgba(233, 229, 229, 0.188), rgba(0, 0, 0, 0.5)),
-    url("../img/disclousure.png") center/cover no-repeat;
+    url("../img/odisea.webp") center/cover no-repeat;
 
 }
 
