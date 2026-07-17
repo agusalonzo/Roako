@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-fondo: #eff6f6;
+    --color-logo: #2c2e2c;
+    --color-texto-links: #585654;
+    --color-texto-claro: #f6efef;
+    --color-acento: #ff5900;
+    --transicion-rapida: 0.2s ease;
+}
+
+
+/* FONTS */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+a:focus-visible,
+  button:focus-visible {
+      outline: 2px solid var(--color-acento);
+      outline-offset: 3px;
+      border-radius: 4px;
+  }
+
+
+  /* NAVBAR */
+
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--color-fondo);
+    flex-wrap: wrap;
+    
+}
+
+.logo {
+    flex: 1;
+}
+.logo a {
+    color: var(--color-acento);
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.lista-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    font-weight: 400;
+
+}
+
+.lista-nav a {
+    color: var(--color-texto-links);
+    transition: color var(--transicion-rapida);
+
+}
+
+.lista-nav a:hover,
+.lista-nav a.activo {
+    color: var(--color-logo);
+    font-weight: 500;
+}
+
+.botones-sesion {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+/* BOTONES */
+
+
+.btn-ingresar {
+    color: var(--color-logo);
+    padding: 10px 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: color var(--transicion-rapida);
+}
+.btn-ingresar:hover {
+    color: var(--color-acento);
+}
+
+
+.btn-principal {
+    background-color: var(--color-logo);
+    color: var(--color-texto-claro) ;
+    padding: 10px 20px;
+    border-radius: 15px; 
+    font-weight: 300;
+    transition: background-color var(--transicion-rapida);
+    
+}
+
+.btn-principal:hover {
+    background-color: var(--color-acento);
+    color: var(--color-texto-claro);
+} 
+
+
+
+
+/* --------------- SEARCH BAR -------------------*/
+
+input.form-control[type="search"]:hover {
+    background-color: rgba(0, 0, 0, 0.35) !important;
+  }
+
+  input.form-control[type="search"]:focus-visible {
+    outline: 2px solid var(--color-acento); 
+  }
+
+  button.btn-principal:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+    border-radius: 15px;
+
+  }
+/* ============================
+     MEDIA QUERY - PANTALLAS CHICAS
+  ============================ */
+  @media (max-width: 768px) {
+    .logo {
+        order: 1;
+        flex: 1;
+    }
+
+    .botones-sesion {
+        order: 2;
+        flex: 1;
+    }
+
+    .lista-nav {
+        order: 3;
+        flex: 0 0 100%;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 12px 0;
+        gap: 12px;
+        justify-content: center;
+        scrollbar-width: none;
+    }
+
+    .lista-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lista-nav .item {
+        flex: 0 0 auto;
+    }
+
+    .lista-nav a {
+        background-color: rgba(44, 46, 44, 0.05);
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+
+/* --------------- FOOTER ---------------- */
+
+.general-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start ;
+    flex-wrap: wrap;
+    padding: 3rem 3rem 1.5rem;
+    font-size: 0.85rem;
+    background-color: var(--color-fondo);
+}
+
+.contenedor-footer h3 {
+    color: var(--color-acento);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lista-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.lista-footer a {
+    color: var(--color-texto-links);
+    text-decoration: none;
+    transition: color var(--transicion-rapida);
+    font-size: smaller;
+}
+
+.lista-footer a:hover {
+    color: var(--color-logo);
+    font-weight: 500;
+}
+
+.copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.copyright p {
+    color: var(--color-texto-links);
+    font-size: 13px;
+    margin: 0;
+}
+
+/* HERO  */
+
+.hero {
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    color: white;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/proyecto1.jpg") center/cover no-repeat;
+}
+
+.hero-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 50vh;
+    color: rgba(255, 255, 255, 0.276);
+    margin: 0 auto;
+
+    font-size: 30px;
+
+
+    background: linear-gradient(rgba(233, 229, 229, 0.188), rgba(0, 0, 0, 0.5)),
+    url("../img/odisea.webp") center/cover no-repeat;
+
+}
+
