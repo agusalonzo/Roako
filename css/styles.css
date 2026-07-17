@@ -124,6 +124,7 @@ a:focus-visible,
 
 
 
+
 /* --------------- SEARCH BAR -------------------*/
 
 input.form-control[type="search"]:hover {
@@ -131,10 +132,15 @@ input.form-control[type="search"]:hover {
   }
 
   input.form-control[type="search"]:focus-visible {
-    outline: 2px solid var(--color-acento);
+    outline: 2px solid var(--color-acento); 
   }
 
+  button.btn-principal:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+    border-radius: 15px;
 
+  }
 /* ============================
      MEDIA QUERY - PANTALLAS CHICAS
   ============================ */
