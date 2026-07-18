@@ -165,12 +165,20 @@ button.btn-principal:focus-visible {
 
 /* --------------- CARDS ----------------- */
 
-.card img {
-  height: 24rem;
+.card-fixed{
   width: 100%;
-  object-fit: cover;
-
+  aspect-ratio: 9 / 16; 
+  overflow: hidden;
 }
+
+.card-fixed .card-img,
+.card-fixed img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 /* --------------- FOOTER ---------------- */
 .general-footer {
