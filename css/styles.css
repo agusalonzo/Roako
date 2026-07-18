@@ -166,7 +166,7 @@ button.btn-principal:focus-visible {
 /* --------------- CARDS ----------------- */
 
 .card img {
-  height: 450px;
+  height: 24rem;
   width: 100%;
   object-fit: cover;
 
