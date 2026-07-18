@@ -160,6 +160,18 @@ button.btn-principal:focus-visible {
     white-space: nowrap;
   }
 }
+
+
+
+/* --------------- CARDS ----------------- */
+
+.card img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
 /* --------------- FOOTER ---------------- */
 .general-footer {
   display: flex;
