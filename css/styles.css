@@ -35,17 +35,18 @@ button:focus-visible {
 /* --------- TITULOS --------- */
 
 .titulo1 {
-  background-color: var(--color-fondo);
   color: var(--color-acento);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   flex-wrap: wrap;
-  
 
 }
 
+.titulo2 {
+  color: var(--color-acento);
+}
 
 
 /* NAVBAR */
