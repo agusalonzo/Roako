@@ -35,13 +35,14 @@ button:focus-visible {
 /* --------- TITULOS --------- */
 
 .titulo1 {
-  background-color: #ff5900;
-  color: #eff6f6;
+  background-color: var(--color-fondo);
+  color: var(--color-acento);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   flex-wrap: wrap;
+  
 
 }
 
@@ -194,6 +195,18 @@ button.btn-principal:focus-visible {
   display: block;
 }
 
+.card-fixed{
+
+  transition:.3s;
+  
+  }
+  
+  .card-fixed:hover{
+  
+  transform:scale(1.04);
+  
+  }
+
 
 /* --------------- FOOTER ---------------- */
 .general-footer {
@@ -261,6 +274,30 @@ button.btn-principal:focus-visible {
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/proyecto1.png") center/cover no-repeat;
 }
+
+.hero h1{
+
+  animation: aparecer 1s ease;
+  
+  }
+
+  @keyframes aparecer{
+
+    from{
+    
+    opacity:0;
+    transform:translateY(30px);
+    
+    }
+    
+    to{
+    
+    opacity:1;
+    transform:translateY(0);
+    
+    }
+    
+    }
 
 .hero-2 {
   align-items: center;
