@@ -32,6 +32,57 @@ button:focus-visible {
   border-radius: 4px;
 }
 
+/* --------- TITULOS --------- */
+
+.titulo1 {
+  background-color: #ff5900;
+  color: #eff6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+
+}
+
+
+/* carrusel */
+
+/* --- CONTENEDOR PRINCIPAL DEL CARRUSEL --- */
+#carouselExampleCaptions {
+  height: 500px;
+  overflow: hidden;
+  
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+  height: 100%;
+}
+
+/* --- IMÁGENES (Estilo Banner Ancho) --- */
+#carouselExampleCaptions .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la foto sin deformarla */
+  object-position: top center;
+}
+
+/* --- TEXTO SOBRE LA IMAGEN (Centrado absoluto) --- */
+#carouselExampleCaptions .carousel-caption {
+  /* Estiramos la caja del texto sobre todo el slide */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+
+
 /* NAVBAR */
 .navegacion {
   display: flex;
